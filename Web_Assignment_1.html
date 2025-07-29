@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Learn HTML5 structure, accessibility, and SEO fundamentals with this demo web page.">
+  <meta name="keywords" content="HTML5, Accessibility, SEO, Web Design">
+  <meta name="author" content="David">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Accessibility & SEO Demo</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header, nav, main, section, footer {
+      padding: 20px;
+      margin: auto;
+      max-width: 960px;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      border-bottom: 4px solid #0055aa;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      background-color: #ffffff;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+    }
+
+    h1, h2 {
+      color: #000000;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #eeeeee;
+      padding: 10px;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    address {
+      font-style: normal;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My HTML5 Demo Page</h1>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About This Page</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sed molestiae tenetur blanditiis sequi dolores natus mollitia sint, porro tempora dolore corporis reiciendis dignissimos reprehenderit eius quis inventore assumenda debitis.</p>
+    </section>
+
+    <section id="features" aria-labelledby="features-heading">
+      <h2 id="features-heading">Accessibility and SEO Features</h2>
+      <ul>
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident animi architecto laboriosam consequuntur temporibus deleniti, maiores cumque consequatur possimus sed id ut aspernatur delectus recusandae, labore, nihil sunt neque obcaecati.</li>
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident animi architecto laboriosam consequuntur temporibus deleniti, maiores cumque consequatur possimus sed id ut aspernatur delectus recusandae, labore, nihil sunt neque obcaecati.</li>
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident animi architecto laboriosam consequuntur temporibus deleniti, maiores cumque consequatur possimus sed id ut aspernatur delectus recusandae, labore, nihil sunt neque obcaecati.</li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Information</h2>
+      <address>
+        <p>Email: <a href="mailto:david@example.com">david@example.com</a></p>
+        <p>Location: Mombasa, Kenya</p>
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 David. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
